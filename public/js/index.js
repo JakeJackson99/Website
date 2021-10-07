@@ -1,5 +1,7 @@
 const form = document.getElementById("contact-form");
 
+// https://jakejackson.herokuapp.com/send"
+
 const formEvent = form.addEventListener("submit", (event) => {
   event.preventDefault();
 
@@ -9,7 +11,7 @@ const formEvent = form.addEventListener("submit", (event) => {
 });
 
 const sendMail = (mail) => {
-  fetch("https://jakejackson.herokuapp.com/send", {
+  fetch("/send", {
     method: "post",
     body: mail,
   }).then((response) => {
