@@ -1,0 +1,28 @@
+html, body {
+  height: 100vh;
+}
+
+.vertical-center {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.skills {
+  font-family: monospace;
+  color: #02a852;
+}
+
+code {
+  color: #02a852;
+  font-weight: 500;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #02a852;
+}
