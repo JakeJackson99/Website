@@ -11,7 +11,7 @@ const formEvent = form.addEventListener("submit", (event) => {
 });
 
 const sendMail = (mail) => {
-  fetch("/send", {
+  fetch("https://jakejackson.herokuapp.com/send", {
     method: "post",
     body: mail,
   }).then((response) => {
